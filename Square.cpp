@@ -24,7 +24,7 @@ Square::Square()
 Square::Square(std::string color, Point2D* vertices)
 : Rectangle(color, vertices) {
     if (!check(vertices)) {
-        throw std::invalid_argument("vertices no forman un cuadrado");
+        throw std::invalid_argument("Provided vertices do not build a valid square!");
     }
 }
 
